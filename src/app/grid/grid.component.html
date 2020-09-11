@@ -1,0 +1,15 @@
+<button nbButton hero status="success" size="giant"(click)="newGame()">NEW GAME</button>
+
+<h1 *ngIf="!gameWinner">Player: {{ playerStatus }}</h1>
+
+<h2 *ngIf="gameWinner">
+    {{ gameWinner }} won the Game!
+</h2>
+
+<main>
+    <app-box *ngFor="let i = index; let val of boxes"
+    [value] = "val"
+    (click) = "move(i)">
+
+    </app-box>
+</main>

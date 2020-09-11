@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 1px;
+    justify-content: center;
+}
+  
+app-box {
+    border: 1px gray solid;
+    height: 200px;
+    border-width: 0.1px !important;
+    border-color: lighten($color: #833ef3, $amount: 5%) !important;
+}
+
+h1 {
+    color: green($color: #000000);
+}
